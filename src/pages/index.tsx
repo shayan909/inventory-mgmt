@@ -15,9 +15,13 @@ const Home = () => {
   const [isOpenContactUs, setIsOpenContactUs] = useState(false);
 
   return (
-    <Page children={undefined}>
+    <Page>
       <NextSeo title="Inventory Management" description="Manufacturing Inventory Management" />
-      <Banner />
+      <Banner
+        setIsOpen={function (value: boolean): void {
+          throw new Error('Function not implemented.');
+        }}
+      />
       <main>
         <ListSection setIsOpen={setIsOpenContactUs} />
         <CasesSection />
