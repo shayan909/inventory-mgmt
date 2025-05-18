@@ -1,4 +1,4 @@
-import { useState, React } from 'react';
+import { useState } from 'react';
 import { NextSeo } from 'next-seo';
 import Page from '@/components/page';
 import Banner from '@/components/Banner';
